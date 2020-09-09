@@ -3,7 +3,7 @@
 <p><i> The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
 It includes three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.</i> <br>
 
-<b>The columns in this <a href="">dataset</a> are:</b>
+<b>The columns in this <a href="https://github.com/nilavya2000/Student_alcohol_consumption/blob/master/data/student_alcohol.csv">dataset</a> are:</b>
   <ul><i>
   <li><b>school </b>- student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)</li>
 <li><b>sex - </b>student's sex (binary: 'F' - female or 'M' - male)</li>
