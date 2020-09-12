@@ -1,43 +1,48 @@
 # Student Alcohol Consumption <br>
 ## About the Project: - 
-<p><i> The data were obtained in a survey of students math and portuguese language courses in secondary school. It contains a lot of interesting social, gender and study information about students. You can use it for some EDA or try to predict students final grade.</i> <br>
+<p><i> This is an educational data set which is collected from learning management system (LMS) called Kalboard 360. Kalboard 360 is a multi-agent LMS, which has been designed to facilitate learning through the use of leading-edge technology. Such system provides users with a synchronous access to educational resources from any device with Internet connection.
 
-<b>The columns in this <a href="https://github.com/nilavya2000/Student_alcohol_consumption/blob/master/data/student_alcohol.csv">dataset</a> are:</b>
+The data is collected using a learner activity tracker tool, which called experience API (xAPI). The xAPI is a component of the training and learning architecture (TLA) that enables to monitor learning progress and learner’s actions like reading an article or watching a training video. The experience API helps the learning activity providers to determine the learner, activity and objects that describe a learning experience.
+The dataset consists of 480 student records and 16 features. The features are classified into three major categories: (1) Demographic features such as gender and nationality. (2) Academic background features such as educational stage, grade Level and section. (3) Behavioral features such as raised hand on class, opening resources, answering survey by parents, and school satisfaction.
+
+The dataset consists of 305 males and 175 females. The students come from different origins such as 179 students are from Kuwait, 172 students are from Jordan, 28 students from Palestine, 22 students are from Iraq, 17 students from Lebanon, 12 students from Tunis, 11 students from Saudi Arabia, 9 students from Egypt, 7 students from Syria, 6 students from USA, Iran and Libya, 4 students from Morocco and one student from Venezuela.
+
+The dataset is collected through two educational semesters: 245 student records are collected during the first semester and 235 student records are collected during the second semester.
+
+The data set includes also the school attendance feature such as the students are classified into two categories based on their absence days: 191 students exceed 7 absence days and 289 students their absence days under 7.
+
+This dataset includes also a new category of features; this feature is parent parturition in the educational process. Parent participation feature have two sub features: Parent Answering Survey and Parent School Satisfaction. There are 270 of the parents answered survey and 210 are not, 292 of the parents are satisfied from the school and 188 are not.</i> <br>
+
+<b>The columns in this <a href="https://github.com/nilavya2000/Student_alcohol_consumption/blob/master/data/student.csv">dataset</a> are:</b>
   <ul><i>
-  <li><b>school </b>- student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)</li>
-<li><b>sex - </b>student's sex (binary: 'F' - female or 'M' - male)</li>
-<li><b>age - </b>student's age (numeric: from 15 to 22)</li>
-<li><b>address - </b>student's home address type (binary: 'U' - urban or 'R' - rural)</li>
-<li><b>famsize - </b>family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)</li>
-<li><b>Pstatus -</b> parent's cohabitation status (binary: 'T' - living together or 'A' - apart)</li>
-<li><b>Medu - </b>mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)</li>
-<li><b>Fedu - </b>father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 – 5th to 9th grade, 3 – secondary education or 4 – higher education)</li>
-<li><b>Mjob - </b>mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')</li>
-<li><b>Fjob - </b>father's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')</li>
-<li><b>reason - </b>reason to choose this school (nominal: close to 'home', school 'reputation', 'course' preference or 'other')</li>
-<li><b>guardian - </b>student's guardian (nominal: 'mother', 'father' or 'other')</li>
-<li><b>traveltime - </b>home to school travel time (numeric: 1 - 1 hour)</li>
-<li><b>studytime - </b>weekly study time (numeric: 1 - 10 hours)</li>
-<li><b>failures - </b>number of past class failures (numeric: n if 1<=n<3, else 4)</li>
-<li><b>schoolsup - </b>extra educational support (binary: yes or no)</li>
-<li><b>famsup - </b>family educational support (binary: yes or no)</li>
-<li><b>paid - </b>extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)</li>
-<li><b>activities - </b>extra-curricular activities (binary: yes or no)</li>
-<li><b>nursery - </b>attended nursery school (binary: yes or no)</li>
-<li><b>higher - </b>wants to take higher education (binary: yes or no)</li>
-<li><b>internet - </b>Internet access at home (binary: yes or no)</li>
-<li><b>romantic - </b>with a romantic relationship (binary: yes or no)</li>
-<li><b>famrel - </b>quality of family relationships (numeric: from 1 - very bad to 5 - excellent)</li>
-<li><b>freetime - </b>free time after school (numeric: from 1 - very low to 5 - very high)</li>
-<li><b>goout - </b>going out with friends (numeric: from 1 - very low to 5 - very high)</li>
-<li><b>Dalc - </b>workday alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
-<li><b>Walc - </b>weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)</li>
-<li><b>health - </b>current health status (numeric: from 1 - very bad to 5 - very good)</li>
-<li><b>absences - </b>number of school absences (numeric: from 0 to 93)</li>
-<li><b>G1 - </b>first period grade (numeric: from 0 to 20)</li>
-<li><b>G2 -</b> second period grade (numeric: from 0 to 20)</li>
-<li><b>G3 -</b>final grade (numeric: from 0 to 20, output target)</li>
+  <li><b>Gender -</b> student's gender (nominal: 'Male' or 'Female’)</li>
+<li><b> Nationality-</b>student's nationality (nominal:’ Kuwait’,’ Lebanon’,’ Egypt’,’ SaudiArabia’,’ USA’,’ Jordan’,’
+Venezuela’,’ Iran’,’ Tunis’,’ Morocco’,’ Syria’,’ Palestine’,’ Iraq’,’ Lybia’)</li>
+<li><b> Place of birth-</b>student's Place of birth (nominal:’ Kuwait’,’ Lebanon’,’ Egypt’,’ SaudiArabia’,’ USA’,’ Jordan’,’
+Venezuela’,’ Iran’,’ Tunis’,’ Morocco’,’ Syria’,’ Palestine’,’ Iraq’,’ Lybia’)</li>
+<li><b>Educational Stages-</b>educational level student belongs (nominal: ‘lowerlevel’,’MiddleSchool’,’HighSchool’)</li>
+<li><b>Grade Levels-</b>grade student belongs (nominal: ‘G-01’, ‘G-02’, ‘G-03’, ‘G-04’, ‘G-05’, ‘G-06’, ‘G-07’, ‘G-08’, ‘G-09’, ‘G-10’, ‘G-11’, ‘G-12 ‘)</li>
+<li><b>Section ID-</b> classroom student belongs (nominal:’A’,’B’,’C’)</li>
+<li><b>Topic-</b>course topic (nominal:’ English’,’ Spanish’, ‘French’,’ Arabic’,’ IT’,’ Math’,’ Chemistry’, ‘Biology’, ‘Science’,’ History’,’ Quran’,’ Geology’)</li>
+<li><b>Semester-</b>school year semester (nominal:’ First’,’ Second’)</li>
+<li>Parent responsible for student (nominal:’mom’,’father’)</li>
+<li><b> Raised hand- </b>how many times the student raises his/her hand on classroom (numeric:0-100)</li>
+<li><b>Visited resources- </b>how many times the student visits a course content(numeric:0-100)</li>
+<li><b> Viewing announcements-</b>how many times the student checks the new announcements(numeric:0-100)</li>
+<li><b> Discussion groups- </b>how many times the student participate on discussion groups (numeric:0-100)</li>
+<li><b>Parent Answering Survey- </b> parent answered the surveys which are provided from school or not
+(nominal:’Yes’,’No’)</li>
+
+<li><b>Parent School Satisfaction-</b>the Degree of parent satisfaction from school(nominal:’Yes’,’No’)</li>
+<li><b>Student Absence Days-</b>the number of absence days for each student (nominal: above-7, under-7)</li>
+
   </i></ul>
+  <ul>The students are classified into three numerical intervals based on their total grade/mark:
+  <li> <b>Low-Level:</b> interval includes values from 0 to 69.</li>
+  <li> <b>Middle-Level:</b> interval includes values from 70 to 89.</li>
+  <li><b>High-Level:</b> interval includes values from 90-100.</li>
+  </ul>
+
 </p>
 
 ## Language used: - 
@@ -66,7 +71,4 @@ Make Tab for indentation (tab = 3 spaces), and afer writing a code use the comme
   <li>Push changes to GitHub.</li>
   <li>Submit your changes for review.</li>
   <li>Refer to <a href="https://github.com/Hack-Club-SIT/Git-Learning-Resources">Git Resources</a> for git commands.</li></ul></p>
- 
- 
- <p>Made with :heart: by Nilavya Das</p>
  
