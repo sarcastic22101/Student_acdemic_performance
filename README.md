@@ -1,4 +1,4 @@
-# Student Alcohol Consumption <br>
+# Student Academic Performance <br>
 ## About the Project: - 
 <p><i> This is an educational data set which is collected from learning management system (LMS) called Kalboard 360. Kalboard 360 is a multi-agent LMS, which has been designed to facilitate learning through the use of leading-edge technology. Such system provides users with a synchronous access to educational resources from any device with Internet connection.
 
